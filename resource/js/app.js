@@ -11,6 +11,10 @@ angular.module("FinalApp", ["lumx", "ngRoute", "ngResource"])
         })
         .when("/posts/new", {
             controller: "NewPostController",
-            templateUrl: "templates/post_form.html"            
+            templateUrl: "templates/post_form.html"
+        })
+        .when("/posts/edit/:id", {
+            controller: "PostController",
+            templateUrl: "templates/post_form.html"
         })
 });
